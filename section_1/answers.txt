@@ -1,0 +1,56 @@
+Q) What is the output of putc “Beautiful Code” and putc 321?
+A) If string is given, then the first byte of the string is printed.
+   So, output of putc "Beautiful Code" is B.
+
+   If number is given, then the last significant byte (LSB) of the number is converted to char and printed. 
+   So, for putc 321 
+   LSB of 321 is 65 whose char value is 'A'.
+
+Q) What is the output of puts 5*3 and puts 5**3 ?
+A) 5*3 = 15 # * is for multiplication
+   5**3 = 5 * 5 * 5 = 125 # ** is for exponential
+
+Q)What are the Disadvantage of putc method (Refer: http://ruby-doc.org/core-2.1.3/IO.html#method-i-putc)
+A) The disadvantage of using putc method is when multi-byte characters are given. It will truncate all but the
+   first byte.
+
+Q) What is the difference between print(“I am”, “ a”“ Web”, “ Developer”) and puts(“I am”, “ a”“ Web”, “ Developer”)
+A) Both are used for printing  
+
+   print method will print all the arguments as it is.
+   Output for print(“I am”, “ a”“ Web”, “ Developer”) will be
+   I am a Web Developer
+
+   puts method will add a blank line at the end of the each argument.
+   Output for puts(“I am”, “ a”“ Web”, “ Developer”)
+   I am
+    a Web
+    Developer
+
+Q) What is the difference between “beautiful code”.capitalize and “beautiful code”.upcase 
+A) capitalize - Will change only the first letter in the first word to uppercase.
+   "beautiful code".capitalize  #output Beautiful code
+
+   upcase - Will convert all letter in the word(s) to uppercase
+   "beautiful code".upcase    #output BEAUTIFUL CODE
+
+Q) What is the Difference between gets and gets.chomp?
+A) gets method is used to read input. gets method by default will append a blank line at the end of the input.
+   gets.chomp will truncate such blank lines.
+
+Q) What is the Difference between … and .. in for loop
+A) ... - Excludes the last number in the range
+   ..  - Includes the last number in the range
+
+Q) What is the difference between “.reverse” and “.reverse!”
+A) ! will modify a object in place
+   .reverse will return a object whose contents are reversed
+   .reverse! will reverse the contents of the object in place
+
+Q) What are the differences between Array and Hash
+A) Arrays consists of only values, while Hash contains key, value pairs.
+   
+   In array, each value has an associated index, by which we can access the element. Indexing starts at 0.
+   In hash, values can be accessed using its associated key.
+
+
