@@ -1,0 +1,47 @@
+Q) What is the difference between arguments and splat arguments ? 
+A) To pass any information to a method we use arguments.
+   The difference between regular arguments and splat arguments is
+   Using Splat arguments, variable number of arguments can be passed to a method.
+
+Q)What is the output of : 
+                1. [3,5,6,2,7].sort 
+                2. [3,5,6,2,7].sort { |x,y|  y<=>x 
+                3. [1,3,5] ⇔ [2,5]
+                4. [2,6,8] ⇔ [2,6,7]
+A) Outputs:
+   1) [2,3,5,6,7]
+   2) [7,6,5,3,2]
+   3) -1
+   4)  1
+   
+  When arrays are compared,
+  If arrays are of different size, then the elements are compared to each other "k" times.
+  Where "k" is the size of the smallest array. (Only the first 'k' elements in both the arrays
+  are compared).
+
+  In the "k" comparisons, if all the values are equal then the array with the highest is 
+  treated to be greater.
+
+Q) Which of the following are faster when compared to other, when used as keys of hash
+       Symbols or Strings and why ?
+A) Symbols is faster as keys of hash for the following two reasons:
+   1) Immutable - Can't be changed once created
+   2) Memory for symbol is allocated only once, i.e only copy exists at any given time
+
+Q) What is the difference between .to_sym and .intern methods ?
+A) Except for difference in their names, both are used for same purpose:
+   Converting a string to a symbol
+
+Q) What is the difference between ‘||=’ and ‘=’ operators ? 
+A) Assignment operator (=), will allow re-assignment of a value to a variable.
+   Conditional Assignment operator (||=), will not allow re-assignemnt of a value to a variable.
+
+Q) What are the differences between block and Proc ?
+A) Block and Proc allow us to write a bit of code between do..end or {}. 
+   The main difference between them is Block is not an object while Proc is an object.
+   Since, Block is not an object it cannot be assigned to variable and re-used again and again.
+   With Proc we can acheive this.
+
+Q) What are the differences between Proc and Lambda ?
+A) A lambda is just like a proc, except it cares about the number of arguments it gets
+   and it return to its calling method rather than returning immediately.
