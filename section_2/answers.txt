@@ -14,7 +14,7 @@ A) Outputs:
    3) -1
    4)  1
    
-  When arrays are compared,
+  The comparision in the case of different sized arrays:
   If arrays are of different size, then the elements are compared to each other "k" times.
   Where "k" is the size of the smallest array. (Only the first 'k' elements in both the arrays
   are compared).
@@ -44,4 +44,4 @@ A) Block and Proc allow us to write a bit of code between do..end or {}.
 
 Q) What are the differences between Proc and Lambda ?
 A) A lambda is just like a proc, except it cares about the number of arguments it gets
-   and it return to its calling method rather than returning immediately.
+   and it returns to its calling method rather than returning immediately.
