@@ -1,0 +1,48 @@
+Q) Suppose there are two classes A and B can we have a class C which is defined as below
+class C < A; end
+class C<B; end 
+Explain the reason as well ?
+
+A) In ruby, multiple inheritance is not supported . Hence, Class C cannot inherit two classes A and B. 
+   A Ruby class can only have one superclass.
+   
+Q) Explain the difference between instance variables and class variables with syntax.
+A) Instance variables is specific to every instance of a class. i.e For every object created by a class 
+   there will be own copy of instance variables. A change made to a instance variable of a specific object 
+   will not affect other object's instance variable.
+
+   Syntax: @<variable_name>
+   Ex:  @age
+
+   Class variables are variables which are common to all instances of a class. A change made to a class 
+   variable will affect all the objects of that class.
+
+   Syntax: @@<variable_name>
+   Ex: @@count
+
+Q) What does super keyword do in Ruby ?
+A) The super statement in a method will try to find the method with the same name in the Parent class and call it.
+   super - It will also implicitly pass the arguments to the parent method
+   super() - It will explicitly tell the Parent method not to take any arguments from the Child method
+
+Q) What does attr_reader and attr_writer do in Ruby (To which form ruby translates them)?
+A) attr_reader and attr_writer are used for reading and writing the instance variables of a class respectively.
+   They are equivalent to getter and setter in Java language.
+
+   attr_reader gets translated to the following form
+   def <variable_name>
+        @<variable_name>
+   end
+
+   attr_writer gets translated to the following form
+   def <variable_name>=(value)
+        @<variable_name> = value
+   end
+
+
+Q) Differentiate between include, extend and require ?
+A) include - Mixes the module's methods at Instance Level. 
+             Needs a class's instance for calling the methods of a module.
+   extend - Mixes the module's methods at Class Level
+            Can directly access the method using the <class_name>.<method_name> notation.
+   require - Reads the file from the file system, parses it, saves to the memory and runs it in a given place. 
