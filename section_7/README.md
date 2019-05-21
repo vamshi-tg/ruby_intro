@@ -1,6 +1,5 @@
 Instructions
 ------
----
 To install the gems:
 
 ```
